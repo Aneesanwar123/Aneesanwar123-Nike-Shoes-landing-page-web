@@ -1,0 +1,221 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.navbar{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.hero .navbar img{
+    height: 150px;
+    padding-left: 30px;
+}
+.hero .navbar nav ul{
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    z-index: 10;
+}
+
+.hero .navbar nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.hero .navbar nav ul li a:hover{
+    border-bottom:2px solid #EB0000;
+}
+.hero .navbar .rightbar{
+    color: white;
+    padding-right: 5px;
+}
+.hero .navbar .rightbar i{
+    margin-right: 20px;
+}
+.hero .backside_heading{
+    font-size: 22rem;
+    text-align: center;
+    padding-top: 0px;
+    color: rgba(255, 255, 255, 0.1);
+    opacity: 0.2;
+    font-weight: bolder;
+}
+.frontside_text{
+    position: absolute;
+    top: 18%;
+    left: 12%;
+    display: flex;
+    gap: 250px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 10rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+.hero .frontside_text #heading_1{
+    font-weight: bolder;
+    color: #EB0000;
+}
+.hero .frontside_text #heading_2{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+.hero .hero_text{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    color: white;
+}
+.hero .hero_para{
+    position: relative;
+    bottom: 40px;
+    right: 25px;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 12px;
+}
+.hero .hero_para_2{
+    position: relative;
+    bottom: 170px;
+    left: 70%;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 12px;
+    color: #EB0000;
+}
+.hero .hero_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.hero .hero_footer .buttons{
+    display: flex;
+    gap: 30px;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+.hero .hero_footer .footer_button{
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    font-weight: bolder;
+    font-size: medium;
+}
+.hero .hero_footer .footer_button_2{
+    background-color:#101012;
+    color: white;
+    border: 0.5px solid white;
+    height: 50px;
+    width: 150px;
+    font-weight: bolder;
+    font-size: medium;
+}
+.hero .hero_footer .content{
+    color: white;
+    max-width: 400px;
+}
+.hero .hero_footer .content h3{
+    font-size: 1.5rem;
+}
+.hero .hero_footer .content p{
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+.hero .text {
+    /* display: flex; */
+    padding-left: 80px;
+}
+.hero .line{
+    position:absolute;
+    bottom: 25%;
+    height: 150px;
+    width: 1px;
+    background-color: white;
+}
+.hero .heading{
+    color: white;
+    /* padding-top: 80px; */
+    padding-bottom: 90px;
+    transform: rotate(-90deg);
+}
+.hero #headings_data{
+    text-align: start;
+    font-size: 1.5rem;
+}
+.hero .hero_center_image{
+    position: absolute;
+    bottom: 12%;
+    left: 25%;
+    height: 680px;
+    object-fit: cover;
+    transform: rotate(-50deg);
+}
+.hero .radialcircle {
+    position: relative;
+    bottom: 70%;
+    left: 40%;
+    height: 420px;
+    width: 420px;
+    background: radial-gradient(circle, white,#101012);
+    border-radius: 50%;
+    filter: blur(500px);
+}
+.hero_center_image{
+    z-index: 1;
+}
+.hero .hero_footer .footer_button, 
+.hero .hero_footer .footer_button_2 {
+    z-index: 10;  /* Ensure buttons are above other content */
+    transition: all 0.2s ease-in;
+}
+
+.hero .hero_footer .footer_button,
+.hero .hero_footer .footer_button_2 {
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    font-weight: bolder;
+    font-size: medium;
+    z-index: 10; /* Ensure buttons are clickable and hover works */
+}
+
+.hero .hero_footer .footer_button_2 {
+    background-color: #101012;
+    color: white;
+    border: 0.5px solid white;
+}
+
+.hero .hero_footer .footer_button:hover,
+.hero .hero_footer .footer_button_2:hover {
+    background-color: #EB0000;
+    color: white;
+}
